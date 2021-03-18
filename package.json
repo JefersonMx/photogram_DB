@@ -1,0 +1,33 @@
+{
+  "name": "photogram_db",
+  "version": "1.0.0",
+  "description": "Photogram database cli",
+  "main": "index.js",
+  "scripts": {
+    "lint": "standard",
+    "test": "npm run lint && ava"
+  },
+  "standard": {
+    "parser": "babel-eslint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JefersonMx/photogram_DB.git"
+  },
+  "keywords": [
+    "DB"
+  ],
+  "author": "Jeferson Andrés <jeffersonmx@outlook.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JefersonMx/photogram_DB/issues"
+  },
+  "homepage": "https://github.com/JefersonMx/photogram_DB#readme",
+  "devDependencies": {
+    "ava": "^3.15.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.22.0",
+    "standard": "^16.0.3"
+  },
+  "dependencies": {}
+}
