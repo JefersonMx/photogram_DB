@@ -29,5 +29,9 @@
     "eslint": "^7.22.0",
     "standard": "^16.0.3"
   },
-  "dependencies": {}
+  "dependencies": {
+    "bluebird": "^3.7.2",
+    "rethinkdb": "^2.4.2",
+    "uuid-base62": "^0.1.0"
+  }
 }
