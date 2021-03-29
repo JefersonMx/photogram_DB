@@ -6,7 +6,7 @@ const r = require('rethinkdb')
 const uuid = require('uuid-base62')
 const fixture = require('./fixtures/index')
 
-const dbName = `photogram_${uuid.v4()}`
+const dbName = `picter_${uuid.v4()}`
 const db = new Db({ db: dbName })
 
 test.before('Conectar base de datos', async t => {
