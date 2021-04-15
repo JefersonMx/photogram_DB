@@ -17,3 +17,9 @@ test('Extraer #hashtags de un texto', t => {
   tags = utils.extractTags(null)
   t.deepEqual(tags, [])
 })
+test('Encriptar contraseñas', t => {
+  const password = 'foo123'
+  const ecrypted = '02b353bf5358995bc7d193ed1ce9c2eaec2b694b21d2f96232c9d6a0832121d1'
+  const result = utils.encrypt(password)
+  t.is(result, ecrypted)
+})

@@ -9,7 +9,7 @@ const fixtures = {
       url: `https://picter.test/${uuid.v4()}.jpg`,
       likes: 0,
       liked: false,
-      user_id: uuid.uuid()
+      userId: uuid.uuid()
     }
   },
   getImages (n) {
@@ -18,6 +18,14 @@ const fixtures = {
       images.push(this.getImage())
     }
     return images
+  },
+  getUser () {
+    return {
+      name: 'Jeferson',
+      username: `user_${uuid.v4()}`,
+      password: uuid.uuid(),
+      email: `${uuid.v4()}@picter.test`
+    }
   }
 }
 module.exports = fixtures
